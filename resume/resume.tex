@@ -1,0 +1,204 @@
+\documentclass[9pt,a4paper]{article}
+
+\usepackage[left=1.25cm,right=1.25cm,top=1.2cm,bottom=1.2cm]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{paracol}
+\usepackage{ragged2e}
+
+\tcbuselibrary{breakable}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt}
+
+\definecolor{primary}{HTML}{0F172A}
+\definecolor{accent}{HTML}{1E3A8A}
+\definecolor{panel}{HTML}{F1F5F9}
+\definecolor{text}{HTML}{0B1220}
+
+\color{text}
+
+\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0em}{}[\vspace{2pt}\hrule\vspace{6pt}]
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+
+\begin{document}
+
+%======================
+% HEADER
+%======================
+\begin{tcolorbox}[
+  colback=primary,
+  colframe=primary,
+  boxrule=0pt,
+  arc=8pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt
+]
+{\color{white}\Huge\textbf{Федосов Даниил Станиславович}}\\[-2pt]
+{\color{white}\large System / Technical Analyst}\\[6pt]
+{\color{white}
+Москва \quad
+\faPhone\ 8-915-513-38-85 \quad
+\faEnvelope\ \href{mailto:fedosov.danil46@gmail.com}{fedosov.danil46@gmail.com} \quad
+Telegram: @fedosoff46
+}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+%======================
+% BODY
+%======================
+\columnratio{0.33,0.64}
+\begin{paracol}{2}
+\RaggedRight
+
+% LEFT COLUMN
+\begin{tcolorbox}[
+  breakable,
+  colback=panel,
+  colframe=panel,
+  boxrule=0pt,
+  arc=10pt,
+  left=10pt,right=10pt,top=10pt,bottom=10pt
+]
+
+\section*{PROFILE | ПРОФИЛЬ}
+\section*{PROFILE | ПРОФИЛЬ}
+Системный / технический аналитик с опытом работы в enterprise и государственных ИС. 
+Экспертиза: анализ инцидентов, диагностика систем через данные и логи, формализация требований 
+и описание процессов взаимодействия систем.
+
+\section*{KEY SKILLS | КЛЮЧЕВЫЕ НАВЫКИ}
+
+\textbf{Системный анализ}
+\begin{itemize}
+  \item Сбор и формализация требований
+  \item Декомпозиция задач
+  \item Постановка задач в Jira
+  \item Acceptance criteria / Definition of Done
+  \item Анализ бизнес- и системной логики
+\end{itemize}
+
+\textbf{Данные и БД}
+\begin{itemize}
+  \item Реляционные БД: PostgreSQL, MySQL, Oracle
+  \item NoSQL: MongoDB
+  \item SQL: JOIN, CTE, агрегации, оконные функции
+  \item Аналитические выборки и исследование данных
+  \item Анализ жизненного цикла объектов и транзакций
+  \item Диагностика системных ошибок через анализ данных
+  \item Работа с лог-данными (ElasticSearch)
+\end{itemize}
+
+\textbf{Интеграции и API}
+\begin{itemize}
+  \item REST API, JSON
+  \item OpenAPI / Swagger
+  \item Postman
+  \item Базовое понимание клиент-серверного взаимодействия
+  \item Анализ контрактов и параметров запросов
+\end{itemize}
+
+\textbf{Процессы и моделирование}
+\begin{itemize}
+  \item BPMN 2.0
+  \item Camunda
+  \item Описание сценариев и точек отказа
+  \item Анализ статусов, переменных и маршрутов процесса
+\end{itemize}
+
+\textbf{Диагностика и сопровождение}
+\begin{itemize}
+  \item ElasticSearch, Kibana
+  \item Анализ логов и RCA
+  \item Инциденты 2--3 линии
+  \item SLA / приоритизация / эскалации
+\end{itemize}
+
+\textbf{Инструменты}
+\begin{itemize}
+  \item Jira, Confluence
+  \item Git
+  \item Python (скрипты и автоматизация)
+  \item Scrum / Kanban
+\end{itemize}
+
+\section*{EDUCATION | ОБРАЗОВАНИЕ}
+\textbf{Курский государственный университет}\\
+Магистратура: 09.04.01 --- Информатика и вычислительная техника \hfill 2025 -- н.в.\\
+Бакалавриат: 02.03.03 --- Математическое обеспечение и администрирование информационных систем \hfill 2021 -- 2025
+
+\end{tcolorbox}
+
+\switchcolumn
+
+% RIGHT COLUMN
+\section*{EXPERIENCE | ОПЫТ}
+
+\textbf{ООО «ЭЙТИ КОНСАЛТИНГ»} \hfill 07.2025 --- н.в.\\
+\textit{System Analyst (федеральная ГИС)}\\
+\textit{Проект: государственная информационная система для обработки и мониторинга заявок и процессов ведомственного взаимодействия}
+\begin{itemize}
+  \item Анализ инцидентов 2--3 линии: воспроизведение сценариев, локализация причины, сбор технической фактуры и сопровождение до устранения
+\item Анализ бизнес- и системной логики процессов в Camunda: маршруты, переменные, последовательности шагов, точки отказа
+\item Анализ логов в ElasticSearch и Kibana, выявление повторяющихся паттернов ошибок
+\item Анализ данных в PostgreSQL: SQL-запросы для диагностики, проверки гипотез и анализа состояния данных в продуктивном контуре
+\item Формализация постановок задач для разработки в Jira: описание проблемы, сценарии воспроизведения, критерии готовности, декомпозиция
+\item Взаимодействие с разработчиками и смежными командами при анализе дефектов и согласовании решений
+  \item Контроль прохождения инцидентов по SLA до полного закрытия
+  \item Проектирование логики обработки инцидентов и маршрутизации заявок в подсистеме: описание сценариев, статусов, переходов и условий выполнения процессов
+  \item Проектирование логики обработки данных и сценариев взаимодействия модулей подсистемы
+  \item \textbf{Автоматизация инцидентов:}
+внедрил классификатор тикетов (NLP), снизив поток задач команды линии поддержки на \textbf{40\%}.
+\item \textbf{Аналитика данных системы:}
+через SQL-исследование выявил скрытые дефекты обработки данных и инициировал их исправление.
+\end{itemize}
+
+\textbf{ОКУ «УКС Курской области»} \hfill 07.2024 --- 12.2025\\
+\textit{Ведущий специалист (цифровая трансформация)}\\
+\textit{Проект: работа с государственной системой управления проектами капитального строительства (ИСУП Минстроя РФ)}
+\begin{itemize}
+  \item Сопровождение работы с ИСУП Минстроя РФ по объектам капитального строительства
+  \item Контроль полноты и корректности данных, статусов и сроков исполнения
+  \item Анализ отклонения и несоответствия в данных, инициализация корректировок
+  \item Координация взаимодействие между муниципалитетами, подрядчиками и ответственными участниками процесса
+  \item Обеспечение качества и актуальности данных для управленческой отчетности и контроля исполнения
+\end{itemize}
+
+\textbf{ООО «Информационный центр»} \hfill 08.2022 --- 07.2024\\
+\textit{Developer / Team Lead}\\
+\textit{Проект: разработка системы управления проектами и документооборотом INOUT Project}
+\begin{itemize}
+  \item Разработка и сопровождение ИСУП «INOUT Project»
+  \item Координация задач команды: декомпозиция, планирование, контроль исполнения и ведение бэклога
+  \item Взаимодействие с заказчиком по уточнению задач, ожиданий и приоритетов
+  \item Подготовка релизов и сопровождение изменений
+  \item Подготовка технической документации по системе: описание логики модулей, сценариев обработки данных и требований к доработкам
+\end{itemize}
+
+\section*{PROJECTS \& ADDITIONAL | ПРОЕКТЫ И ДОПОЛНИТЕЛЬНО}
+\begin{itemize}
+  \item \textbf{РФРИТ:} участие в подготовке грантовой заявки, проект прошёл в финальный этап отбора
+  \item \textbf{Samsung IT Academy:} выпускник трека Android-разработки, опыт проектной работы с клиент-серверной логикой
+  \item \textbf{Samsung IT Academy Hack:} победитель хакатона, лидер команды; отвечал за продуктовую упаковку и техническую реализацию прототипа
+  \item \textbf{AR-проект для Минцифры:} участие в прототипировании решения
+  \item \textbf{Наставник «Я в деле»:} сопровождение команд и доведение проектов до финальной защиты
+\end{itemize}
+
+\section*{POSITIONING | ПОЗИЦИОНИРОВАНИЕ}
+\textbf{Интересующая роль:} System Analyst / Technical Analyst / Analyst в продуктовой или интеграционной команде.\\
+\textbf{Фокус:} процессы, данные, инциденты, диагностика, требования, взаимодействие с разработкой.
+
+\end{paracol}
+
+\end{document}
